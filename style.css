@@ -26,4 +26,122 @@ img{
     width: 100%;
     height: auto;
 }
+
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+  }
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
 /* reset code common code end here */
+
+
+/* navbar start here */
+nav{
+    font-family: Monospace;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+.nav-upper{
+    min-height: 7vh;
+    background-color: var(--primary-color);
+    padding: var(--padding);
+
+}
+
+.nav_list{
+    transition: var(--transition);
+}
+.nav_list:hover{
+   
+   text-decoration: overline;
+}
+
+.nav_link{
+    color: white;
+    transition: var(--transition);
+}
+.nav_link:hover{
+    color: black;
+   
+}
+
+.profile-icon{
+   width: 3rem;
+   height: 2.2rem;
+   border-radius: 50%;
+    border: white 1px solid;
+    filter: saturate(0);
+}
+.profile-icon:hover{
+    filter: saturate(1);
+}
+
+.nav-lower{
+    min-height: 8vh;
+    background-color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+.nav_brand{
+    font-size: 2rem;
+}
+
+#menu-icon{
+    display: none;
+}
+/* navbar end here */
+
+/* footer secction starts here */
+.footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    min-height: 10vh;
+    color: white;
+    font-size: 1.1rem;
+  }
+  .btn-subscribe {
+    margin-left: -5px;
+  }
+  .footer_input {
+    border: none;
+    padding: var(--padding);
+    width: 20rem;
+  }
+/* footer secction end here */
+
+/* responsive starts here */
+@media (max-width: 992px){
+    #menu-icon{
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+
+    .hidden{
+        display: none;
+    }
+    .flex-space-around{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+        
+    }
+}
+/* responsive end here */
