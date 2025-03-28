@@ -33,6 +33,11 @@ img{
     align-items: center;
 }
 
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn {
     border: none;
     padding: var(--padding);
@@ -107,6 +112,56 @@ nav{
 }
 /* navbar end here */
 
+/* header starts here */
+.header{
+    padding: 4rem 0;
+    height: 80vh;
+    background: url(images/banner.jpg) no-repeat center;
+
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.banner_title{
+    font-size: 4rem;
+    color: yellow;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+
+.features{
+ width: 100%;
+}
+.feature{
+    background-color: rgb(80,160,78,0.7);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    width: 15rem;
+   gap: 1rem;
+   flex-direction: column;
+}
+
+.feature_icon{
+    font-size: 3rem;
+}
+/* header end here */
+
+/* main section start here */
+main{
+    padding: 4rem 0;
+    min-height: 80vh;
+}
+/* main section end here */
+
 /* footer secction starts here */
 .footer {
     padding: 1rem;
@@ -137,11 +192,13 @@ nav{
     .hidden{
         display: none;
     }
-    .flex-space-around{
+    .flex-space-around, .flex-center{
         flex-direction: column;
         gap: 1rem;
-        padding: 1rem 0;
-        
+        padding: 1rem 0;   
+    }
+    .header{
+        height: 100vh;
     }
 }
 /* responsive end here */
