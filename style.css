@@ -48,6 +48,40 @@ img{
   .btn:hover {
     background-color: var(--secondary-color);
   }
+
+  .section-title{
+    font-size: 2rem;
+  }
+
+  .card{
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  transition: var(--transition);
+  }
+  .card:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,2002,1) ;
+  }
+
+  .dot{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .red{
+    background-color: red;
+  }
+
+  .black{
+    background-color:black;
+  }
+  .yellow{
+    background-color: yellow;
+  }
+  .hr-desgin{
+    margin: 0.5rem;
+  }
 /* reset code common code end here */
 
 
@@ -156,9 +190,86 @@ nav{
 /* header end here */
 
 /* main section start here */
+
 main{
     padding: 4rem 0;
     min-height: 80vh;
+}
+.main-content{
+    flex: 3;
+    padding: var(--padding);
+  }
+
+.sidebar{
+  flex: 1;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  gap: 1rem;
+  align-self: flex-start;
+}
+
+
+
+.actions_sort select{
+    padding: var(--padding);
+
+}
+.actions_search input{
+    padding: var(--padding);
+    width: 15rem;
+}
+.actions_search button{
+    margin-left: -0.3rem ;
+    border: 1px solid;
+    padding: 0.55rem;
+
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.product__image{
+  
+    width: 100%;
+    height: 15rem;
+    filter: saturate(0);
+    transition: var(--transition);
+}
+
+.product__image:hover{
+ filter: saturate(1);
+}
+
+.product_body{
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.learn-more{
+    color: blue;
+}
+
+.product{
+    position: relative;
+}
+.badge{
+background-color: green;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 10;
+color: white;
+padding: 4px 8px;
+text-align: center;
+border-radius: 5px;
 }
 /* main section end here */
 

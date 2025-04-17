@@ -89,8 +89,171 @@
        </header>
        <!-- header end here -->
 
-      <main>
-        <h2>I am in main page</h2>
+      <main class="flex-center">
+        <div class="sidebar">
+            <section class="catagories-section">
+                <h3 class="section-title">Categories</h3>
+                <ul class="list">
+                    <li class="list_item">
+                       
+                        <label for="phone">
+                            <input type="checkbox" name="phone" id="phone" value="phone">
+                            Telephones
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                       
+                        <label for="tablets">
+                            <input type="checkbox" name="tablets" id="tablets" value="tablets">
+                            Tablets
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                       
+                        <label for="televisons">
+                            <input type="checkbox" name="telivisions" id="televisons" value="televisons">
+                            Televisons
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                       
+                        <label for="computers">
+                            <input type="checkbox" name="computers" id="computers" value="computers">
+                            Computers
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                       
+                        <label for="headphones">
+                            <input type="checkbox" name="headphones" id="headphones" value="headphones">
+                            Headphones
+                        </label>
+
+                    </li>
+
+                </ul>
+            </section>
+            <section class="price-section">
+                <h3 class="section-title">Price Range</h3>
+                <ul class="list">
+                    <li class="list_item">
+                       
+                        <label for="price1">
+                            <input type="radio" name="price" id="price1" value="[0,20]">
+                            $0-$20
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                       
+                        <label for="price2">
+                            <input type="radio" name="price" id="price2" value="[21,50]">
+                            $21-$50
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                       
+                        <label for="price3">
+                            <input type="radio" name="price" id="price1" value="[51,100]">
+                            $51-$100
+                        </label>
+
+                    </li>
+                    <li class="list_item">
+                       
+                        <label for="price4">
+                            <input type="radio" name="price" id="price1" value="[101+]">
+                            $101+
+                        </label>
+
+                    </li>
+
+                </ul>
+            </section>
+            <section class="shipping-section">
+                <h3 class="section-title">Shipping options</h3>
+                <ul class="list">
+                    <li class="list_item">
+                       
+                        <label for="free">
+                            <input type="radio" name="shipping" id="free" value="free">
+                           free
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                       
+                        <label for="paid">
+                            <input type="radio" name="shipping" id="paid" value="paid">
+                           Paid
+                        </label>
+
+                    </li>
+
+
+                </ul>
+            </section>
+        </div>
+        <div class="main-content">
+            <section class="actions flex-space-around">
+                <div class="actions_sort">
+                    <label for="sort">Sort By:</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rating</option>
+                        <option value="price">Cheapest first</option>
+                        <option value="arrivel">newest first</option>
+                        <option value="discount">Biggest discount</option>
+                    </select>
+                </div>
+                <div class="actions_search flex-space-around">
+                    <input type="text" placeholder="Search product">
+                    <button class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+
+            <section class="products ">
+                <article class="product card">
+                    <div class="badge">
+                        <span> 5 in stock</span>
+                        <hr class="hr-desgin">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product__image"
+                    src="./images/product1.jpg" alt="product1">
+                    <div class="product_body">
+                        <h3 class="prodcut_name">Sony v-4 Headphone</h3>
+                        <p>
+                            <span class="dot red"></span>
+                            <span class="dot black"></span>
+                            <span class="dot yellow"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            <a href="./product.html" class="learn-more">Learn more</a>
+                        </p>
+                        <h4 class="product_price">$222.25</h4>
+                        <p class="product_rating">Rating:4.5/5</p>
+                        <button class="btn product_btn"> Add To Cart</button>
+                    </div>
+                </article>
+
+            </section>
+        </div>
       </main>
 
       <footer class="footer flex-space-around">
