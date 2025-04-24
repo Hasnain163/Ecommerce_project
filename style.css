@@ -271,6 +271,126 @@ padding: 4px 8px;
 text-align: center;
 border-radius: 5px;
 }
+
+.pagnitation{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.pagnitation_btn{
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+}
+
+.pagnitation_btn:first-child{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+}
+
+/* cart starts here */
+.cart{
+    padding: var(--padding);
+    gap: 1rem;
+
+}
+
+.cart .card{
+    margin-bottom: 1rem;
+}
+
+.cart_items{
+    flex: 1;
+}
+
+
+
+.cart_items-action{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart_item input{
+    flex: 0.1;
+}
+
+.card_item-img
+{
+    flex: 0.2;
+    width: 15rem;
+    height: 10rem;
+}
+.cart_item-description{
+    flex: 0.4;
+
+}
+.card_item-shipping{
+    margin-top:0.5rem ;
+    color: red;
+}
+.card_item-actions{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart_payment{
+ flex: 1;
+}
+
+.cart_payment-summary > div{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 1rem 0;
+}
+
+.cart_payment-btn{
+    width: 100%;
+}
+
+.cart_payment-method > h2{
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.cart_payment-method > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    }
+
+    .fa-brands{
+        color: black;
+    }
+
+/* cart end here */
+
+
+/* product details start here */
+.product-details_left{
+flex: 1;
+}
+ .product-details__img{
+height:20rem ;
+width: 30rem;
+ }
+
+.product-details_right{
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ gap: 0.6rem;
+}
+/* product details end here */
+
 /* main section end here */
 
 /* footer secction starts here */
@@ -310,6 +430,27 @@ border-radius: 5px;
     }
     .header{
         height: 100vh;
+    }
+
+    .products{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cart_items,.cart_payment{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+
+    .flex-center {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+      }
+
+    .products{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
 /* responsive end here */
