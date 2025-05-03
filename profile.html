@@ -61,10 +61,27 @@
       <!-- nav start here -->
 
       <main>
-        <h2>I am in profile page</h2>
+        <section class="profile flex-center">
+            <h2 class="section-title text-center">User profile</h2>
+
+            <div class="profile_description flex-center card">
+                <img src="./images/profile1.jpg" alt="profile" class="profile_img">
+                <h2 class="profile_name details">Hasnain Ahmed</h2>
+                <p class="profile_email details">antorahmed120612@gmail.com</p>
+                <p class="profile_about details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores cupiditate voluptatibus iste.</p>
+                <div class="profile_btn">
+                    <button class="btn profile_edit-btn">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button class="btn profile_edit-btn">
+                        <i class="fa-solid fa-trash "></i>
+                    </button>
+                </div>
+            </div>
+        </section>
       </main>
 
-      <footer class="flex-space-around">
+      <footer class="footer flex-space-around">
         <div class="flex-space-around">
             <label for="subscribe">Subscribe to Newsletter: </label>
             <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email Address">
@@ -74,7 +91,7 @@
         </div>
 
         <div>
-            <p>&copy;Copyright 2023 Anis Express.All rights Rserved</p>
+            <p>&copy;Copyright 2023 Antor Express.All rights Rserved</p>
         </div>
       </footer>
 
