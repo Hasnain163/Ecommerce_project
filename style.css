@@ -454,7 +454,7 @@ width: 30rem;
     width: 30%;
 }
 
-.User_register{
+.User_register,.User_login{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -463,10 +463,30 @@ width: 30rem;
     min-height: 60px;
 }
 
-.register{
+.register,.login{
     width: 45rem;  
 }
 /* register section end here */
+
+/* contact section start here */
+.Contact-section{
+    min-height: 52vh;
+    padding: var(--padding);
+}
+
+.contact-container{
+    margin-top:5rem ;
+}
+
+.contact-address{
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+.contacr-map{
+    width: 80%;
+}
+/* contact section end here */
 
 /* main section end here */
 
@@ -515,6 +535,22 @@ width: 30rem;
 
     .cart_items,.cart_payment{
         width: 90%;
+    }
+    .form{
+        width:100%;
+        gap: 0rem;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .form-control input,textarea{
+        width: 80%;
+    }
+    .register,.login{
+        width: 90%;  
+    }
+    .contact-address{
+        width: 100%;
     }
 }
 
